@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --light-background: #42c9ff;
+  --dark-background: #12171d;
+  --light-text: #eeeeee;
+  --dark-text: #12171d;
+  --font-title: "Hanalei Fill", cursive;
+  --font: "Audiowide", cursive, serif;
+}
+
+.container-home {
+  display: block;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  background-color: var(--dark-background);
+  z-index: -100;
+}
+
+.container-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-circle .gradiant-circle {
+  background: #ff0f7b;
+  background: -webkit-gradient(linear, left top, right top, from(#ff0f7b), to(#f89c2a));
+  background: linear-gradient(90deg, #ff0f7b 0%, #f89c2a 100%);
+  background: -webkit-linear-gradient(90deg, #ff0f7b 0%, #f89c2a 100%);
+  position: absolute;
+  top: 5%;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.container-gundum1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-gundum1 img {
+  position: absolute;
+  right: -250px;
+  top: 25px;
+  z-index: 1;
+  height: 100vh;
+  width: auto;
+}
+
+.container-gundum2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-gundum2 img {
+  position: absolute;
+  left: -200px;
+  top: 25px;
+  z-index: 1;
+  height: 100vh;
+  width: auto;
+}
+
+.container-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: var(--light-text);
+  height: auto;
+  margin: 0px;
+  text-align: center;
+  font-family: var(--font);
+}
+
+.container-about h1 {
+  font-family: var(--font-title);
+  font-size: 98px;
+  margin-top: 50px;
+  margin-bottom: 0;
+  z-index: 10;
+}
+
+.container-about h3 {
+  font-size: 36px;
+  font-family: var(--font-title);
+  font-weight: 100;
+  margin: 0;
+  display: inline-block;
+  background-color: blueviolet;
+  padding: 0 15px 0 15px;
+  border-radius: 10px;
+  border: 1px solid var(--light-text);
+  z-index: 10;
+}
+
+.container-about p {
+  width: 50%;
+  font-weight: 100;
+  line-height: 1.5;
+  z-index: 10;
+}
+
+@media only screen and (max-width: 600px) {
+  .container-circle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: 20px;
+  }
+  .container-gundum2 {
+    display: none;
+  }
+  .container-gundum1 img {
+    position: absolute;
+    left: 125px;
+    z-index: 3;
+  }
+  .container-about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+    padding: 0 0 20px 20px;
+    margin-top: 30px;
+  }
+  .container-about h1 {
+    font-size: 72px;
+  }
+  .container-about h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .container-about p {
+    width: 60%;
+  }
+}
+
+.container-player {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3rem;
+  height: 772px;
+  max-height: 772px;
+}
+
+.container-player #twitch-embed {
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.container-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  gap: 10px;
+  text-align: center;
+  color: var(--light-text);
+  z-index: 10;
+}
+
+footer {
+  display: fixed;
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+  text-align: center;
+  background-color: var(--light-background);
+  color: var(--dark-text);
+}
+/*# sourceMappingURL=index.css.map */
